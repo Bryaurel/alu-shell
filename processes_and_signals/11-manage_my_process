@@ -13,7 +13,7 @@ sudo rm $file
 echo "manage_my_process stopped"
 elif [ "$1" == "restart" ]
 then
-pkill -f .manage_my_process
+pkill -f ./manage_my_process
 sudo rm $file
 ./manage_my_process &
 sudo bash -c "echo $! > $file"
